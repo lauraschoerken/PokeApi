@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "pokemon";
+    src: url("../../fonts/pokmon/PokemonSolid.ttf")
+}
+h1{
+    font-family: "pokemon";
+    color: rgb(255 203 5);
+    -webkit-text-stroke: 1.5px rgb(48, 78, 150);
+    font-size: 55px;
+    padding-bottom: 60px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+*{
+    text-align: center;
+    line-height: 5px;
+}
+
+.input{
+    text-transform: capitalize;
+    width: 15%;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid #a8a8a8;
+    outline: none;
+    font-size: 13px;
+    overflow: hidden;
+    padding: 0px 10px;
+}
+
+.input:focus{
+    border: 3px solid rgba(48, 79, 150, 0.637);
+    background-color: rgba(255, 205, 5, 0.267) ;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+.bold{
+   font-weight: bold; 
+}
+.img{
+    margin-top: -15px;
+    margin-bottom: -30px;
+    height: 150px;
+}
+.noCap{
+    text-transform: lowercase;
+}
+.principal {
+    height: 100vh;
+}

@@ -1,0 +1,15 @@
+<div class="principal" [style.background]="color">
+    <h1>Pokemon</h1>
+    
+    <input class="input" autofocus type="text" (keyup.enter)='agregarEnter()' [(ngModel)]='nombre' placeholder="find your Pokemon:" >
+
+    <br><img class="img" src="{{img}}" alt="">
+    <div  *ngIf="number">
+        <P class="capitalize"><span class="bold">Name: </span>{{name}}</P>
+        <p class="capitalize "><span class="bold">Type: </span>{{type1}} <span *ngIf="isType2" ><span class="noCap">and</span> {{type2}}</span></p> 
+        <p *ngIf="number"><span class="bold">Height:</span> {{newHeight}} m and {{feet.toFixed(2)}} feet</p>
+        <p *ngIf="number"><span class="bold">Weight:</span> {{newWeight}} kg and {{lbs.toFixed()}} lbs </p>
+    </div>
+
+    
+</div>
