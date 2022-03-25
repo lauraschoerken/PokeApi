@@ -8,7 +8,6 @@ import { environment } from 'src/environments/environment';
 })
 export class PokeService {
 
-  baseUrl = environment.baseUrl;
   pokemon = [ ];
 
   constructor(private http: HttpClient) {}
@@ -22,11 +21,11 @@ export class PokeService {
   
 
   getPoke(): Observable<any>{
-    return this.http.get<any>(`${this.baseUrl}/pokemon?limit=1126`);
+    return this.http.get<any>(`https://pokeapi.co/api/v2/pokemon?limit=1126`);
   }
 
     sacarPoke(nombrePokemon:any): Observable<any>{
-    return this.http.get<any>(`${this.baseUrl}/pokemon/${nombrePokemon}`);
+    return this.http.get<any>(`https://pokeapi.co/api/v2/pokemon/${nombrePokemon}`);
   }
 
 }
